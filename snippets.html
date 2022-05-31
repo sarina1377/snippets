@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.328">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Sarina Shahhosseini, S.M.ASCE">
+
+<title>snippets</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+<script src="snippets_files/libs/clipboard/clipboard.min.js"></script>
+<script src="snippets_files/libs/quarto-html/quarto.js"></script>
+<script src="snippets_files/libs/quarto-html/popper.min.js"></script>
+<script src="snippets_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="snippets_files/libs/quarto-html/anchor.min.js"></script>
+<link href="snippets_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link id="quarto-text-highlighting-styles" href="snippets_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<script src="snippets_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="snippets_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="snippets_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<p>To preview markdown in vscode, we need an extention to convert markdown to html and pdf. Several exntentions are available but <a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles">Github markdwon preview</a> has been found to be the most user friendly.</p>
+<ul>
+<li>Open cmd: CONTROL + R, type cmd</li>
+<li>get a list of files in a dir: type dir</li>
+<li>change to a dir and go back to the previous dir: type cd and cd..; example: cd quarto, cd ..</li>
+<li>Cancel a command: CONTROL + C</li>
+<li>Finish a command: Append /? to your command</li>
+<li>USe Tab to complete: cd hold q, press tab: cd ./quarto/</li>
+<li>Up and Down: previous commands</li>
+<li>Save your command prompt: ipconfig&gt; dir ;example:</li>
+</ul>
+<p><img src="img/ipcon.png" class="img-fluid"></p>
+<ul>
+<li>Use pip (preferred installer program) to to install, update or manage software packages written in Python; examples:</li>
+<li>pip install –upgrade quarto (upgrade quarto frequently for now)</li>
+<li>pip help</li>
+<li>pip –version</li>
+<li>pip install</li>
+</ul>
+<p><strong>Snippets In Quarto</strong></p>
+<ol type="1">
+<li>Control Shift P</li>
+<li>Select Insert snippets</li>
+<li>Define your own snippets: File&gt; properties&gt; User snippets&gt; search quarto: the template is defined.</li>
+<li>quarto.json: snippets defined by me. You can easily copy the file in youe snippets folder, or just copy paste the usefull snnipets in you json file.</li>
+</ol>
+<p>Current issue: snippets are only available with above method, instead of just shwoin by typying or using Control Space, which is also what is stated in quarto website, see below:</p>
+<div id="fig-axis" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/snippet.png" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 1: <strong>?(caption)</strong></figcaption><p></p>
+</figure>
+</div>
+
+</main>
+<!-- /main column -->
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
