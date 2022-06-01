@@ -29,14 +29,31 @@
 		"prefix": "2 fig",
 		"body": [
 			
-			"::: {#fig-force layout-ncol=2}" 
-			"![a.](img/force++.pdf){#fig-a}"
+			"::: {#fig-force layout-ncol=2}", 
+			"![a.](img/force++.pdf){#fig-a}",
 
-			"![b.](img/force+-.pdf){#fig-b}"
+			"![b.](img/force+-.pdf){#fig-b}",
 
-			"Caption"
+			"Caption",
 			":::"
 		],
-			"description": "Insert photo"
+			"description": "Insert two photos"
 		}
+		,
+	"Refrence": {
+		"prefix": "ref",
+		"body": [
+			"# References",
+
+			"::: {#refs}",
+			":::",
+		],
+			"description": "Insert refrence with title"
+		}
+
+
+
+
+
+
 }

@@ -31,9 +31,9 @@ To preview markdown in vscode, we need an extention to convert markdown to html 
 1. Control Shift P
 2. Select Insert snippets
 3. Define your own snippets: File> properties> User snippets> search quarto: the template is defined.
-4. quarto.json: snippets defined by me. You can easily copy the file in youe snippets folder, or just copy paste the usefull snnipets in you json file.
+4. quarto.json file is the snippets defined by me. You can easily copy the file in your snippets folder(after openning json file in step3, cope the path locate it), or just copy paste the usefull snippets in your json file.
 
-Current issue: snippets are only available with above method, instead of just shwoin by typying or using Control Space, which is also what is stated in quarto website, see below:
+Current issue: snippets are only available with above method, instead of just shwoing by typying or using Control Space, which is also what is stated in quarto website, see below:
 
 ::: {#fig-axis}
 ![](img/snippet.png)
