@@ -144,7 +144,7 @@
 
 \begin{document}
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, interior hidden, sharp corners, enhanced, breakable, frame hidden, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, enhanced, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, breakable, sharp corners, frame hidden]}{\end{tcolorbox}}\fi
 
 \title{Usfull tips for commond prompt}
 
@@ -201,15 +201,15 @@ markdwon preview} has been found to be the most user friendly.
 \item
   Control Shift P
 \item
-  Select Insert snippets
+  Select Insert snippets: choose the snippet you want
 \item
   Define your own snippets: File\textgreater{} properties\textgreater{}
   User snippets\textgreater{} search quarto: the template is defined.
 \item
   quarto.json file is the snippets defined by me. You can easily copy
   the file in your snippets folder(after openning json file in step3,
-  cope the path locate it), or just copy paste the usefull snippets in
-  your json file.
+  copy the path and locate it), or just copy paste the usefull snippets
+  in your json file.
 \end{enumerate}
 
 Current issue: snippets are only available with above method, instead of
