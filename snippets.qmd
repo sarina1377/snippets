@@ -25,6 +25,7 @@ To preview markdown in vscode, we need an extention to convert markdown to html 
 + pip help
 + pip --version
 + pip install
+### python -m pip install --upgrade pip
 
 **Snippets In Quarto**
 
