@@ -23,8 +23,9 @@ To preview markdown in vscode, we need an extention to convert markdown to html 
 * Use pip (preferred installer program) to to install, update or manage software packages written in Python; examples: 
 + pip install --upgrade quarto (upgrade quarto frequently for now)
 + pip help
-+ pip --version
++ pip --versioncd
 + pip install
+### py -3.10 -m pip install openpyxl( cause I have both python 3.9 and 3.10)
 ### python -m pip install --upgrade pip
 
 **Snippets In Quarto**

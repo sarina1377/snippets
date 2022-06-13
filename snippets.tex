@@ -144,7 +144,7 @@
 
 \begin{document}
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, enhanced, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, breakable, sharp corners, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, breakable, boxrule=0pt, sharp corners, enhanced, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
 
 \title{Usfull tips for commond prompt}
 
@@ -188,9 +188,10 @@ markdwon preview} has been found to be the most user friendly.
 \item
   pip help
 \item
-  pip --version
+  pip --versioncd
 \item
-  pip install \#\#\# python -m pip install --upgrade pip
+  pip install \#\#\# py -3.10 -m pip install openpyxl( cause I have both
+  python 3.9 and 3.10) \#\#\# python -m pip install --upgrade pip
 \end{itemize}
 
 \textbf{Snippets In Quarto}
